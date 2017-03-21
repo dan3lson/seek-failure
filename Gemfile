@@ -35,7 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Enables you to use fake people, places, or things (e.g. addresses)
 gem 'faker'
 # Paginate pages
-gem 'will_paginate', '~> 3.1.0'
+gem 'kaminari'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
