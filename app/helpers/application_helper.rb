@@ -1,4 +1,4 @@
-module ApplicationHelper	
+module ApplicationHelper
   def action?(params_action)
     params[:action] == params_action
   end
@@ -9,5 +9,9 @@ module ApplicationHelper
 
   def icon(name)
     content_tag(:i, nil, class: "fa fa-#{name}")
+  end
+
+  def emoji(name)
+    content_tag(:i, nil, class: "em em-#{name}")
   end
 end
