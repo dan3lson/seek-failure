@@ -1,11 +1,47 @@
-<%# if action?("home") %>
-	<%#= link_to root_path,
-							class: "nav-item nav-link active" do %>
-		<%#= icon("home") %> <!-- Home  -->
-	<%# end %>
-<%# else %>
-	<%#= link_to "Home",
+<% if action?("") %>
+	<%= link_to "About",
+							root_path,
+							class: "nav-item nav-link active"
+  %>
+<% else %>
+	<%= link_to "About",
 							root_path,
 							class: "nav-item nav-link"
 	%>
-<%# end %>
+<% end %>
+
+<% if action?("") %>
+	<%= link_to "Trivia",
+							root_path,
+							class: "nav-item nav-link active"
+  %>
+<% else %>
+	<%= link_to "Trivia",
+							root_path,
+							class: "nav-item nav-link"
+	%>
+<% end %>
+
+<% if action?("") %>
+	<%= link_to "Contribute",
+							root_path,
+							class: "nav-item nav-link active"
+  %>
+<% else %>
+	<%= link_to "Contribute",
+							root_path,
+							class: "nav-item nav-link"
+	%>
+<% end %>
+
+<% if action?("") %>
+	<%= link_to "Your Failures",
+							root_path,
+							class: "nav-item nav-link active"
+  %>
+<% else %>
+	<%= link_to "Your Failures",
+							root_path,
+							class: "nav-item nav-link"
+	%>
+<% end %>

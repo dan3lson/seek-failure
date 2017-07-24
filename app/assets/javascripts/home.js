@@ -1,8 +1,11 @@
 $(document).ready(function() {
-	$(".grid").masonry({
-		itemSelector: ".grid-item",
-		columnWidth: ".grid-sizer",
-		percentPosition: true,
-		gutter: 25
+	$(".view-profile").click("click", function() {
+		viewShowPage(this);
 	});
+
+	function viewShowPage(card) {
+		var $card = $(card);
+		var url = "/" + $card.data("profile");
+		$(location).attr("href", url);
+	}
 });

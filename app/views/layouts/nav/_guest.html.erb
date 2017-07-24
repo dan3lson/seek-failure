@@ -8,16 +8,14 @@
           aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <h1 class="navbar-brand mb-0">Seek Failure</h1>
+  <%= link_to "Seek Failure",
+              root_path,
+              class: "navbar-brand",
+              title: "Seek Failure homepage"
+  %>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <div class="navbar-nav mr-auto mt-2 mt-lg-0">
       <%= render "layouts/nav/guest_links" %>
     </div>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="e.g. business, cars">
-      <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">
-        <%= icon "filter" %> Filter
-      </button>
-    </form>
   </div>
 </nav>
