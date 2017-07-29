@@ -1,35 +1,148 @@
-<div class="profile-sections card card-inverse">
+<div class="text-center">
+</div>
+<div class="profile-sections card card-inverse mb-3">
 	<div class="card-block">
-		<h1 class="card-title"><%= name %></h1>
-		<section>
-			<h2><%= emoji "baby" %> Bio</h2>
-		</section>
-		<section>
-			<h2><%= emoji "weary" %> Failures</h2>
-		</section>
-		<section>
-			<h2><%= emoji "raised_hands" %> Successes</h2>
-		</section>
-		<section>
-			<h2><%= emoji "vhs" %> Videos</h2>
-		</section>
-		<section>
-			<h2><%= emoji "foggy" %> Pictures</h2>
-		</section>
-		<section>
-			<h2><%= emoji "books" %> Books</h2>
-		</section>
-		<section>
-			<h2><%= emoji "link" %> Articles</h2>
-		</section>
-		<section>
-			<h2><%= emoji "sound" %> Podcasts</h2>
-		</section>
-		<section>
-			<h2><%= emoji "mega" %> Social Media</h2>
-		</section>
-		<section>
-			<h2><%= emoji "100" %> Quotes</h2>
-		</section>
+		<!-- <h1><%#= emoji "hatching_chick" %> Bio</h1> -->
+		<div class="row">
+			<div class="col-md-4">
+				<%= image_tag "elon-musk.jpg",
+											alt: "Elon Musk",
+											title: "Elon Musk",
+											class: "img img-fluid"
+				%>
+			</div>
+			<div class="col-md-8">
+				<h1 class="display-3 text-white"><%= name %></h1>
+				<p class="card-text lead">
+					Explorer, Innovator, Inventor
+				</p>
+				<p class="card-text">
+					Many times exist in Elon's
+					life when he faced overwhelming odds. What makes him very unique is
+					that he <em>chooses</em> to pursue insanely ambitious ideas that
+					naturally results in these overwhelming odds and others thinking
+					he's crazy. In doing so, he willingly faces challenges whose results
+					haven't always gone his way. For Elon, that's okay though because
+					"...if you're not failing, you're not innovating enough".
+					How can you push the boundaries in your life and seek failure like
+					Elon Musk?
+				</p>
+				<div class="share-div mt-4">
+					<span class="text-danger">
+						<%= icon "heart" %> <%= Faker::Number.number(4) %>
+					</span>
+					&nbsp;
+					<span class="text-fb">
+						<%= icon "facebook-official" %> <%= Faker::Number.number(4) %>
+					</span>
+					&nbsp;
+					<span class="text-twitter">
+						<%= icon "twitter-square" %> <%= Faker::Number.number(4) %>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="profile-sections card card-inverse mb-3">
+	<div class="card-block">
+		<h1 class="mb-4"><%= emoji "hatching_chick" %> Bio</h1>
+	</div>
+</div>
+<div class="profile-sections card card-inverse mb-3">
+	<div class="card-block">
+		<h1 class="mb-4"><%= emoji "sweat" %> Failures</h1>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card card-inverse mb-3" style="background-color: #404040; border-color: #333;">
+					<div class="card-block">
+						<h3 class="card-title"><%= Faker::Lorem.sentence %></h3>
+						<p class="card-text"><%= Faker::Lorem.paragraph %></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card card-inverse mb-3" style="background-color: #404040; border-color: #333;">
+					<div class="card-block">
+						<h3 class="card-title"><%= Faker::Lorem.sentence %></h3>
+						<p class="card-text"><%= Faker::Lorem.paragraph %></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card card-inverse mb-3" style="background-color: #404040; border-color: #333;">
+					<div class="card-block">
+						<h3 class="card-title"><%= Faker::Lorem.sentence %></h3>
+						<p class="card-text"><%= Faker::Lorem.paragraph %></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card card-inverse mb-3" style="background-color: #404040; border-color: #333;">
+					<div class="card-block">
+						<h3 class="card-title"><%= Faker::Lorem.sentence %></h3>
+						<p class="card-text"><%= Faker::Lorem.paragraph %></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card card-inverse mb-3" style="background-color: #404040; border-color: #333;">
+					<div class="card-block">
+						<h3 class="card-title"><%= Faker::Lorem.sentence %></h3>
+						<p class="card-text"><%= Faker::Lorem.paragraph %></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card card-inverse mb-3" style="background-color: #404040; border-color: #333;">
+					<div class="card-block">
+						<h3 class="card-title"><%= Faker::Lorem.sentence %></h3>
+						<p class="card-text"><%= Faker::Lorem.paragraph %></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="profile-sections card card-inverse mb-3">
+	<div class="card-block">
+		<h1 class="mb-4"><%= emoji "raised_hands" %> Successes</h1>
+	</div>
+</div>
+<div class="profile-sections card card-inverse mb-3">
+	<div class="card-block">
+		<h1 class="mb-4"><%= emoji "vhs" %> Videos</h1>
+	</div>
+</div>
+<div class="profile-sections card card-inverse mb-3">
+	<div class="card-block">
+		<h1 class="mb-4"><%= emoji "foggy" %> Pictures</h1>
+	</div>
+</div>
+<div class="profile-sections card card-inverse mb-3">
+	<div class="card-block">
+		<h1 class="mb-4"><%= emoji "books" %> Books</h1>
+	</div>
+</div>
+<div class="profile-sections card card-inverse mb-3">
+	<div class="card-block">
+		<h1 class="mb-4"><%= emoji "link" %> Articles</h1>
+	</div>
+</div>
+<div class="profile-sections card card-inverse mb-3">
+	<div class="card-block">
+		<h1 class="mb-4"><%= emoji "sound" %> Podcasts</h1>
+	</div>
+</div>
+<div class="profile-sections card card-inverse mb-3">
+	<div class="card-block">
+		<h1 class="mb-4"><%= emoji "speech_balloon" %> Social Media</h1>
+	</div>
+</div>
+<div class="profile-sections card card-inverse mb-3">
+	<div class="card-block">
+		<h1 class="mb-4"><%= emoji "100" %> Quotes</h1>
 	</div>
 </div>
