@@ -11,17 +11,19 @@ body {
 	border-color: #333;
 }
 
+.display-2 {
+	text-shadow: 1px 1px 1px ;
+
+	sup {
+		color: gray;
+	}
+}
 .profile-sections {
 	background-color: #333;
 }
 
 .view-profile {
 	cursor: pointer;
-
-	// &:hover {
-  //   -webkit-animation: pulse 1s;
-  //   animation: pulse 1s;
-	// }
 }
 
 .share-div {

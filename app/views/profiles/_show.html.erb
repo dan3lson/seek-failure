@@ -13,9 +13,11 @@
 			</div>
 			<div class="col-md-8">
 				<h1 class="display-3 text-white"><%= name %></h1>
-				<p class="card-text lead">
-					Explorer, Innovator, Inventor
-				</p>
+				<div class="mt-3 mb-3">
+					<span class="badge badge-default">explorer</span>
+					<span class="badge badge-default">innovator</span>
+					<span class="badge badge-default">inventor</span>
+				</div>
 				<p class="card-text">
 					Many times exist in Elon's
 					life when he faced overwhelming odds. What makes him very unique is
@@ -47,6 +49,7 @@
 <div class="profile-sections card card-inverse mb-3">
 	<div class="card-block">
 		<h1 class="mb-4"><%= emoji "hatching_chick" %> Bio</h1>
+		<p class="card-text"><%= Faker::Lorem.paragraph %></p>
 	</div>
 </div>
 <div class="profile-sections card card-inverse mb-3">
@@ -54,25 +57,32 @@
 		<h1 class="mb-4"><%= emoji "sweat" %> Failures</h1>
 		<div class="row">
 			<div class="col-md-4">
-				<div class="card card-inverse mb-3" style="background-color: #404040; border-color: #333;">
+				<div class="card card-inverse mb-3 section-card-bg">
 					<div class="card-block">
-						<h3 class="card-title"><%= Faker::Lorem.sentence %></h3>
+						<h3 class="card-title">
+							Unsuccessfully applied for a job at Netscape
+						</h3>
 						<p class="card-text"><%= Faker::Lorem.paragraph %></p>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="card card-inverse mb-3" style="background-color: #404040; border-color: #333;">
+				<div class="card card-inverse mb-3 section-card-bg">
 					<div class="card-block">
-						<h3 class="card-title"><%= Faker::Lorem.sentence %></h3>
+						<h3 class="card-title">
+							Ousted as CEO of his own company Zip2
+						</h3>
 						<p class="card-text"><%= Faker::Lorem.paragraph %></p>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="card card-inverse mb-3" style="background-color: #404040; border-color: #333;">
+				<div class="card card-inverse mb-3 section-card-bg">
 					<div class="card-block">
-						<h3 class="card-title"><%= Faker::Lorem.sentence %></h3>
+						<h3 class="card-title">
+							The first PayPal product was voted one of the 10 worst business
+							ideas
+						</h3>
 						<p class="card-text"><%= Faker::Lorem.paragraph %></p>
 					</div>
 				</div>
@@ -80,25 +90,61 @@
 		</div>
 		<div class="row">
 			<div class="col-md-4">
-				<div class="card card-inverse mb-3" style="background-color: #404040; border-color: #333;">
+				<div class="card card-inverse mb-3 section-card-bg">
 					<div class="card-block">
-						<h3 class="card-title"><%= Faker::Lorem.sentence %></h3>
+						<h3 class="card-title">Ousted from PayPal while on honeymoon</h3>
 						<p class="card-text"><%= Faker::Lorem.paragraph %></p>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="card card-inverse mb-3" style="background-color: #404040; border-color: #333;">
+				<div class="card card-inverse mb-3 section-card-bg">
 					<div class="card-block">
-						<h3 class="card-title"><%= Faker::Lorem.sentence %></h3>
+						<h3 class="card-title">
+							Russians refused to sell him rockets to send mice or plants to
+							Mars
+						</h3>
 						<p class="card-text"><%= Faker::Lorem.paragraph %></p>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="card card-inverse mb-3" style="background-color: #404040; border-color: #333;">
+				<div class="card card-inverse mb-3 section-card-bg">
 					<div class="card-block">
-						<h3 class="card-title"><%= Faker::Lorem.sentence %></h3>
+						<h3 class="card-title">First SpaceX rocket launch exploded</h3>
+						<p class="card-text"><%= Faker::Lorem.paragraph %></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card card-inverse mb-3 section-card-bg">
+					<div class="card-block">
+						<h3 class="card-title">
+							Third SpaceX rocket launch exploded, and this time with critical
+							Nasa satellites onboard
+						</h3>
+						<p class="card-text"><%= Faker::Lorem.paragraph %></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card card-inverse mb-3 section-card-bg">
+					<div class="card-block">
+						<h3 class="card-title">
+							Both Tesla and SpaceX on the brink of bankruptcy
+						</h3>
+						<p class="card-text"><%= Faker::Lorem.paragraph %></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card card-inverse mb-3 section-card-bg">
+					<div class="card-block">
+						<h3 class="card-title">
+							First rocket failure while landing at the ocean
+						</h3>
 						<p class="card-text"><%= Faker::Lorem.paragraph %></p>
 					</div>
 				</div>
